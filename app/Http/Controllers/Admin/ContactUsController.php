@@ -36,6 +36,11 @@ class ContactUsController extends Controller
             ],
             'email' => $request->input('email', ''),
             'phone_number' => $request->input('phone_number', ''),
+            'facebook_link' => $request->input('facebook_link', ''),
+            'ig_link' => $request->input('ig_link', ''),
+            'tiktok_link' => $request->input('tiktok_link', ''),
+            'telegram_link' => $request->input('telegram_link', ''),
+            'linkedin_link' => $request->input('linkedin_link', ''),
         ];
 
         if ($request->hasFile('icon')) {
@@ -71,6 +76,11 @@ class ContactUsController extends Controller
             ],
             'email' => $request->input('email', ''),
             'phone_number' => $request->input('phone_number', ''),
+            'facebook_link' => $request->input('facebook_link', ''),
+            'ig_link' => $request->input('ig_link', ''),
+            'tiktok_link' => $request->input('tiktok_link', ''),
+            'telegram_link' => $request->input('telegram_link', ''),
+            'linkedin_link' => $request->input('linkedin_link', ''),
         ];
 
         if ($request->hasFile('icon')) {

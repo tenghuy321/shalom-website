@@ -1,7 +1,8 @@
 <x-app-layout>
     <div class="max-w-7xl mx-auto bg-white shadow-md rounded-lg p-6 my-2">
         <h2 class="text-2xl font-bold text-[#401457]">Edit Hero Banner</h2>
-        <form action="{{ route('contact-us.update', $contact->id) }}" method="POST" enctype="multipart/form-data" class="space-y-4">
+        <form action="{{ route('contact-us.update', $contact->id) }}" method="POST" enctype="multipart/form-data"
+            class="space-y-4">
             @csrf
             @method('PATCH')
             @component('admin.components.alert')
@@ -72,9 +73,44 @@
                 </div>
                 <div>
                     <label for="phone_number" class="block text-sm font-medium text-[#401457]">Phone Number</label>
-                    <input value="{{ old('phone_number', $contact->phone_number) }}" type="text" name="phone_number" id="phone_number"
+                    <input value="{{ old('phone_number', $contact->phone_number) }}" type="text" name="phone_number"
+                        id="phone_number"
                         class="mt-1 block w-full p-2 border rounded-md focus:ring-[#401457] focus:border-[#401457] text-[#401457] text-sm">
                     <x-input-error class="mt-2" :messages="$errors->get('phone_number')" />
+                </div>
+                <div>
+                    <label for="facebook_link" class="block text-sm font-medium text-[#401457]">Facebook</label>
+                    <input value="{{ old('facebook_link', $contact->facebook_link) }}" type="text"
+                        name="facebook_link" id="facebook_link"
+                        class="mt-1 block w-full p-2 border rounded-md focus:ring-[#401457] focus:border-[#401457] text-[#401457] text-sm">
+                    <x-input-error class="mt-2" :messages="$errors->get('facebook_link')" />
+                </div>
+                <div>
+                    <label for="ig_link" class="block text-sm font-medium text-[#401457]">Instagram</label>
+                    <input value="{{ old('ig_link', $contact->ig_link) }}" type="text" name="ig_link" id="ig_link"
+                        class="mt-1 block w-full p-2 border rounded-md focus:ring-[#401457] focus:border-[#401457] text-[#401457] text-sm">
+                    <x-input-error class="mt-2" :messages="$errors->get('ig_link')" />
+                </div>
+                <div>
+                    <label for="tiktok_link" class="block text-sm font-medium text-[#401457]">Tiktok</label>
+                    <input value="{{ old('tiktok_link', $contact->tiktok_link) }}" type="text" name="tiktok_link"
+                        id="tiktok_link"
+                        class="mt-1 block w-full p-2 border rounded-md focus:ring-[#401457] focus:border-[#401457] text-[#401457] text-sm">
+                    <x-input-error class="mt-2" :messages="$errors->get('tiktok_link')" />
+                </div>
+                <div>
+                    <label for="telegram_link" class="block text-sm font-medium text-[#401457]">Telegram</label>
+                    <input value="{{ old('telegram_link', $contact->telegram_link) }}" type="text"
+                        name="telegram_link" id="telegram_link"
+                        class="mt-1 block w-full p-2 border rounded-md focus:ring-[#401457] focus:border-[#401457] text-[#401457] text-sm">
+                    <x-input-error class="mt-2" :messages="$errors->get('telegram_link')" />
+                </div>
+                <div>
+                    <label for="linkedin_link" class="block text-sm font-medium text-[#401457]">LinkedIn</label>
+                    <input value="{{ old('linkedin_link', $contact->linkedin_link) }}" type="text"
+                        name="linkedin_link" id="linkedin_link"
+                        class="mt-1 block w-full p-2 border rounded-md focus:ring-[#401457] focus:border-[#401457] text-[#401457] text-sm">
+                    <x-input-error class="mt-2" :messages="$errors->get('linkedin_link')" />
                 </div>
             </div>
 
@@ -123,7 +159,7 @@
                 preview.innerHTML = "";
             }
         }
-        
+
         // Drag-and-drop functionality
         dropArea.addEventListener('dragover', (event) => {
             event.preventDefault();

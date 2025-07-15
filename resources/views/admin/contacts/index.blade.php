@@ -4,12 +4,12 @@
 @endsection
 @section('content')
     <div class="">
-        <div class="my-4 px-2 md:px-4 text-end">
+        {{-- <div class="my-4 px-2 md:px-4 text-end">
             <a href="{{ route('contact-us.create') }}"
                 class="hover:!bg-[#401457] hover:!text-[#ffffff] text-[#401457] px-4 py-2 my-3 rounded-[5px] border-2 border-[#401457] text-[12px] sm:text-[14px]">
                 <span class="">Add new</span>
             </a>
-        </div>
+        </div> --}}
 
         @component('admin.components.alert')
         @endcomponent
@@ -25,6 +25,7 @@
                             <th class="text-left py-3 px-4 text-xs w-[200px] border-r border-[#fff]">Phone Number</th>
                             <th class="text-left py-3 px-4 text-xs w-[200px] border-r border-[#fff]">Working Hours</th>
                             <th class="text-left py-3 px-4 text-xs w-[200px] border-r border-[#fff]">Address</th>
+                            <th class="text-left py-3 px-4 text-xs w-[200px] border-r border-[#fff]">Media</th>
                             <th class="text-left py-3 px-4 text-xs w-[50px]">Actions</th>
                         </tr>
                     </thead>
@@ -56,6 +57,15 @@
                                         <p>{{ $contact->address['en'] ?? '' }}</p>
                                         <p>{{ $contact->address['kh'] ?? '' }}</p>
                                         <p>{{ $contact->address['ch'] ?? '' }}</p>
+                                    </div>
+                                </td>
+                                <td class="py-1 px-4 text-xs max-w-[200px] border-r border-[#401457]">
+                                    <div class="flex flex-col truncate">
+                                        <p>{{ $contact->facebook_link }}</p>
+                                        <p>{{ $contact->ig_link }}</p>
+                                        <p>{{ $contact->tiktok_link }}</p>
+                                        <p>{{ $contact->telegram_link }}</p>
+                                        <p>{{ $contact->linkedin_link }}</p>
                                     </div>
                                 </td>
                                 <td class="py-1 px-4 text-xs">

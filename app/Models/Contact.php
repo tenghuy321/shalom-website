@@ -16,6 +16,11 @@ class Contact extends Model
         'phone_number',
         'hours_of_operation',
         'address',
+        'facebook_link',
+        'ig_link',
+        'tiktok_link',
+        'telegram_link',
+        'linkedin_link',
     ];
 
     protected $casts = [

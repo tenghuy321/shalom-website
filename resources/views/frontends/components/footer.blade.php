@@ -1,10 +1,10 @@
     <section class="bg-[#401457] py-10 px-4 relative overflow-visible">
         <div class="max-w-7xl mx-auto relative grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-10">
             <div>
-                <h2 class="text-[#fff] text-[22px] xl:text-[30px] font-semibold">Infomation</h2>
+                <h2 class="text-[#fff] text-[22px] xl:text-[30px] font-semibold">Information</h2>
                 <ul class="space-y-2 py-5">
                     <li
-                        class="text-[14px] lg:text-[16px] xl:text-[18px] text-[#fff] {{ Route::is('home') ? 'font-[700] underline' : 'font-[400] hover:underline' }}">
+                        class="text-[14px] xl:text-[16px] text-[#fff] {{ Route::is('home') ? 'font-[700] underline' : 'font-[400] hover:underline' }}">
                         <a href="{{ route('home') }}">Home</a>
                     </li>
                     <li
@@ -13,27 +13,27 @@
                     </li>
                     <li
                         class="text-[14px] xl:text-[16px] text-[#fff] {{ Route::is('service') ? 'font-[700] underline' : 'font-[400] hover:underline' }}">
-                        <a href="{{ route('service') }}">Services</a>
+                        <a href="{{ route('service') }}">Our Services</a>
                     </li>
                     <li
                         class="text-[14px] xl:text-[16px] text-[#fff] {{ Route::is('our-partners') ? 'font-[700] underline' : 'font-[400] hover:underline' }}">
-                        <a href="{{ route('our-partners') }}">Partner</a>
+                        <a href="{{ route('our-partners') }}">Partners</a>
                     </li>
                     <li
                         class="text-[14px] xl:text-[16px] text-[#fff] {{ Route::is('client') ? 'font-[700] underline' : 'font-[400] hover:underline' }}">
-                        <a href="{{ route('client') }}">Client</a>
+                        <a href="{{ route('client') }}">Clients</a>
                     </li>
                     <li
                         class="text-[14px] xl:text-[16px] text-[#fff] {{ Route::is('industry') ? 'font-[700] underline' : 'font-[400] hover:underline' }}">
-                        <a href="{{ route('industry') }}">Industry</a>
+                        <a href="{{ route('industry') }}">Industries</a>
                     </li>
                     <li
                         class="text-[14px] xl:text-[16px] text-[#fff] {{ Route::is('event') ? 'font-[700] underline' : 'font-[400] hover:underline' }}">
-                        <a href="{{ route('event') }}">Event</a>
+                        <a href="{{ route('event') }}">Events</a>
                     </li>
                     <li
                         class="text-[14px] xl:text-[16px] text-[#fff] {{ Route::is('contact') ? 'font-[700] underline' : 'font-[400] hover:underline' }}">
-                        <a href="{{ route('contact') }}">Contact</a>
+                        <a href="{{ route('contact') }}">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -43,7 +43,7 @@
 
                 <div class="text-white flex flex-col items-start w-full">
                     <div class="flex items-center justify-center gap-6 md:gap-10 py-5">
-                        <a href="#">
+                        <a href="{{ $contacts->facebook_link }}">
                             <svg class="w-8 h-8" viewBox="0 0 79 79" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_58_46)">
                                     <path
@@ -61,7 +61,7 @@
                                 </defs>
                             </svg>
                         </a>
-                        <a href="#">
+                        <a href="{{ $contacts->ig_link }}">
                             <svg class="w-8 h-8" viewBox="0 0 79 79" fill="none" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <rect width="79" height="79" fill="url(#pattern0_58_51)" />
@@ -75,7 +75,7 @@
                                 </defs>
                             </svg>
                         </a>
-                        <a href="#">
+                        <a href="{{ $contacts->tiktok_link }}">
                             <svg class="w-8 h-8" viewBox="0 0 71 79" fill="none" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <rect width="71" height="79" fill="url(#pattern0_58_53)" />
@@ -90,7 +90,7 @@
                             </svg>
 
                         </a>
-                        <a href="#">
+                        <a href="{{ $contacts->telegram_link }}">
                             <svg class="w-8 h-8" viewBox="0 0 79 79" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_58_54)">
                                     <path
@@ -104,7 +104,7 @@
                                 </defs>
                             </svg>
                         </a>
-                        <a href="#">
+                        <a href="{{ $contacts->linkedin_link }}">
                             <svg class="w-8 h-8" viewBox="0 0 79 79" fill="none" xmlns="http://www.w3.org/2000/svg"
                                 xmlns:xlink="http://www.w3.org/1999/xlink">
                                 <rect width="79" height="79" fill="url(#pattern0_58_57)" />

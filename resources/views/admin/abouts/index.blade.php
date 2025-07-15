@@ -4,12 +4,12 @@
 @endsection
 @section('content')
     <div class="">
-        <div class="my-4 px-2 md:px-4 text-end">
+        {{-- <div class="my-4 px-2 md:px-4 text-end">
             <a href="{{ route('aboutlist.create') }}"
                 class="hover:!bg-[#401457] hover:!text-[#ffffff] text-[#401457] px-4 py-2 my-3 rounded-[5px] border-2 border-[#401457] text-[12px] sm:text-[14px]">
                 <span class="">Add new</span>
             </a>
-        </div>
+        </div> --}}
 
         @component('admin.components.alert')
         @endcomponent
