@@ -54,8 +54,8 @@
                         <template x-if="!loading">
                             <button @click="loading = true; setTimeout(() => { showAll = !showAll; loading = false }, 500)"
                                 class="px-4 py-2 bg-[#401457] text-white rounded hover:bg-[#572469] transition">
-                                <span x-show="!showAll">See more</span>
-                                <span x-show="showAll">See less</span>
+                                <span x-show="!showAll">Many More</span>
+                                <span x-show="showAll">Show Less</span>
                             </button>
                         </template>
 

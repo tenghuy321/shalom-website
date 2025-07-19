@@ -1,6 +1,5 @@
 @extends('frontends.layouts.master')
 @section('content')
-
     @include('frontends.components.loading')
     @include('frontends.components.scroll-top-button')
 
@@ -34,7 +33,8 @@
 
     <section class="w-full bg-[#401457] py-10">
         <div class="w-full max-w-5xl mx-auto px-2 text-[#fff]">
-            <h1 class="text-[13px] xl:text-[15px] font-[600] max-w-[600px] mx-auto text-center" data-aos="fade-up" data-aos-duration="1000">We're here to help. Whether
+            <h1 class="text-[13px] xl:text-[15px] font-[600] max-w-[600px] mx-auto text-center" data-aos="fade-up"
+                data-aos-duration="1000">We're here to help. Whether
                 you have questions about our services or need a ssistance with a tax-related issue, feel free to reach out
             </h1>
 
@@ -44,8 +44,8 @@
                         class="w-20 sm:w-32 lg:w-1/2 h-auto">
                 </div>
 
-                <form action="{{ route('contact.send') }}" method="POST" class="space-y-6 lg:col-span-2 px-2 sm:px-4" data-aos="fade-left" data-aos-duration="1000"
-                    id="contactForm">
+                <form action="{{ route('contact.send') }}" method="POST" class="space-y-6 lg:col-span-2 px-2 sm:px-4"
+                    data-aos="fade-left" data-aos-duration="1000" id="contactForm">
                     @csrf
                     <div id="successMessage"
                         class="hidden relative bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-4">
@@ -108,7 +108,8 @@
 
                     <!-- Service Dropdown -->
                     <div>
-                        <label class="block text-[13px] xl:text-[15px] font-medium text-[#fff] mb-2">Which service are you interested in?</label>
+                        <label class="block text-[13px] xl:text-[15px] font-medium text-[#fff] mb-2">Which service are you
+                            interested in?</label>
                         <select name="service_type" required
                             class="w-full border border-gray-300 rounded px-3 py-2 text-[#401457] bg-white focus:ring-2 focus:ring-[#401457]">
                             <option value="">Please choose one</option>
@@ -151,7 +152,8 @@
                 <ul class="list-disc pl-5 space-y-2 prose leading-relaxed">
                     <li>
                         <strong>Email Address:</strong>
-                        <a href="mailto:{{ $contacts->email }}" class="">{{ $contacts->email }}</a>
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to={{ $contacts->email }}"
+                            class="">{{ $contacts->email }}</a>
                     </li>
 
                     <li>
@@ -167,15 +169,23 @@
                     <li>
                         <strong>Physical Address:</strong>
                         <ul class="list-[circle] pl-5 mt-1 space-y-1">
-                            <li>[Shalom Solution Co., Ltd.]</li>
-                            <li>[{{ $contacts->address[app()->getLocale()] }}]</li>
+                            <li>Shalom Solution Co., Ltd.</li>
+                            <li>{{ $contacts->address[app()->getLocale()] }}</li>
                         </ul>
                     </li>
                 </ul>
             </div>
 
 
-            <img src="{{ asset('assets/images/contact-2.png') }}" alt="" class="w-32 h-auto" data-aos="fade-left" data-aos-duration="1000">
+            <img src="{{ asset('assets/images/contact-2.png') }}" alt="" class="w-32 h-auto"
+                data-aos="fade-left" data-aos-duration="1000">
+        </div>
+
+        {{-- map --}}
+        <div class="w-full flex items-center justify-center pt-10" data-aos="fade-up">
+            <iframe class="w-[500px] h-[300px] border border-[#401457] rounded-md"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3908.699809070842!2d104.8924538!3d11.5733645!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31095100657a342d%3A0xaaf5c8d71d6e29ae!2sShalom%20Solution%20Co.%2C%20Ltd.!5e0!3m2!1sen!2skh!4v1752025323324!5m2!1sen!2skh"
+                allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
 @endsection

@@ -37,7 +37,7 @@
 
     <section class="w-full relative pb-10">
         <div class="w-full max-w-7xl mx-auto text-[#401457] px-2">
-            <h1 class="text-[30px] md:text-[50px] uppercase lg:leading-[55px]" data-aos="fade-right" data-aos-duration="1000">INDUSTRY</h1>
+            <h1 class="text-[30px] md:text-[50px] uppercase lg:leading-[55px]" data-aos="fade-right" data-aos-duration="1000">INDUSTRIES</h1>
             <div class="w-full flex flex-wrap items-stretch justify-center gap-4 py-10">
                 @foreach ($industries as $item)
                     <div class="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333333%-1rem)] border border-[#401457] p-2" data-aos="fade-up" data-aos-duration="1000">

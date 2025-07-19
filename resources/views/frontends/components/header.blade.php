@@ -11,7 +11,7 @@
         <div class="hidden lg:flex items-center gap-10">
             <div class="flex items-center gap-10">
                 <a href="{{ $contacts->phone_number }}">Tel: {{ $contacts->phone_number }}</a>
-                <a href="mailto:{{ $contacts->email }}">Email: {{ $contacts->email }}</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to={{ $contacts->email }}">Email: {{ $contacts->email }}</a>
             </div>
 
             <div class="relative" x-data="{ open: false }">
@@ -191,7 +191,7 @@
                         </div>
                     </div>
                     <a href="{{ $contacts->phone_number }}">Tel: {{ $contacts->phone_number }}</a>
-                    <a href="mailto:{{ $contacts->email }}">Email: {{ $contacts->email }}</a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to={{ $contacts->email }}">Email: {{ $contacts->email }}</a>
                 </div>
 
             </div>

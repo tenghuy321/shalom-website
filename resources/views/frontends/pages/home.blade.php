@@ -5,8 +5,10 @@
     {{-- hero --}}
     <section class="w-full bg-[#f8efff] relative">
         <div class="w-full max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 pt-10 lg:px-10">
-            <div class="px-4 sm:px-20 lg:px-10 xl:px-20 lg:col-span-8 text-[#401457]" data-aos="fade-right" data-aos-duration="1000">
-                <h1 class="text-[30px] md:text-[50px] text-center uppercase leading-[30px] sm:leading-[45px] lg:leading-[55px]">
+            <div class="px-4 sm:px-20 lg:px-10 xl:px-20 lg:col-span-8 text-[#401457]" data-aos="fade-right"
+                data-aos-duration="1000">
+                <h1
+                    class="text-[30px] md:text-[50px] text-center uppercase leading-[30px] sm:leading-[45px] lg:leading-[55px]">
                     {{ $hero->title[app()->getLocale()] }}</h1>
 
                 <div
@@ -50,7 +52,8 @@
                 </div>
             </div>
 
-            <div class="flex items-end justify-center lg:col-span-4 pt-4 lg:pt-0" data-aos="fade-up" data-aos-duration="1000">
+            <div class="flex items-end justify-center lg:col-span-4 pt-4 lg:pt-0" data-aos="fade-up"
+                data-aos-duration="1000">
                 <img src="{{ asset($hero->image) }}" alt="" class="w-[90%] sm:w-[70%] lg:w-full">
             </div>
         </div>
@@ -65,7 +68,8 @@
         <div class="w-full flex flex-wrap items-stretch justify-center gap-4 py-10">
 
             @foreach ($services as $index => $service)
-                <div class="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333333%-1rem)] border border-[#401457] p-2" data-aos="fade-up" data-aos-duration="1000">
+                <div class="w-full md:w-[calc(50%-1rem)] lg:w-[calc(33.333333%-1rem)] border border-[#401457] p-2"
+                    data-aos="fade-up" data-aos-duration="1000">
                     <div class="w-full h-full border border-dashed border-[#401457]">
                         <div
                             class="w-full h-full border border-dashed p-2 text-center text-[#401457] text-[13px] xl:text-[15px] flex flex-col justify-between">
@@ -74,7 +78,8 @@
                                 <h1 class="font-[600]">{{ $service->title[app()->getLocale()] }}</h1>
 
                                 <div class="flex items-center gap-2 text-justify py-2">
-                                    <img src="{{ asset($service->icon) }}" alt="" class="w-20 xl:w-28 h-auto" loading="lazy">
+                                    <img src="{{ asset($service->icon) }}" alt="" class="w-20 xl:w-28 h-auto"
+                                        loading="lazy">
                                     @if (!empty($service->content_display))
                                         <div class="px-2 prose">
                                             {!! $service->content_display[app()->getLocale()] !!}
@@ -95,7 +100,7 @@
     </section>
 
     {{-- trust --}}
-    <section class="w-full bg-[#401457] py-10" >
+    <section class="w-full bg-[#401457] py-10">
         <div class="w-full max-w-7xl mx-auto px-2 text-[#fff] font-[600]" data-aos="fade-right" data-aos-duration="1000">
             <h1 class="text-[16px] xl:text-[20px]">Trusted by our Clients</h1>
             <div
@@ -112,8 +117,10 @@
         <div class="w-full max-w-7xl mx-auto px-2 text-[#401457]">
             <h1 class="text-[16px] xl:text-[20px]" data-aos="fade-right" data-aos-duration="1000">Meet Our Team:</h1>
             <div class="flex flex-col items-center pt-6 gap-10" data-aos="fade-up" data-aos-duration="1000">
-                <img src="{{ asset('assets/images/home/image-1.png') }}" alt="" class="w-full md:w-[50%] h-auto" loading="lazy">
-                <p class="text-[22px] xl:text-[30px] uppercase text-center bg-[#f8efff] px-6 py-4 rounded-md">“WE SUPPORT PROFESSIONALLY”</p>
+                <img src="{{ asset('assets/images/home/image-1.png') }}" alt="" class="w-full md:w-[50%] h-auto"
+                    loading="lazy">
+                <p class="text-[22px] xl:text-[30px] uppercase text-center bg-[#f8efff] px-6 py-4 rounded-md">“WE SUPPORT
+                    PROFESSIONALLY”</p>
             </div>
         </div>
     </section>
@@ -139,7 +146,8 @@
             <div
                 class="bg-[#fff] pt-4 px-2 lg:pt-0 rounded-lg flex flex-col md:flex-row items-center relative overflow-visible">
                 <!-- Text Section -->
-                <div class="text-[#401457] text-center w-full h-full flex flex-col items-center justify-center" data-aos="fade-right">
+                <div class="text-[#401457] text-center w-full h-full flex flex-col items-center justify-center"
+                    data-aos="fade-right">
                     <p class="text-[16px] xl:text-[20px] font-medium">Don’t know where to start?</p>
                     <h1 class="text-[22px] xl:text-[30px] font-bold mb-2">Book a free of charge consulting today</h1>
                     <p class="text-[13px] xl:text-[15px] max-w-sm mx-auto">
@@ -160,19 +168,45 @@
     {{-- faqs and Get in Touch! --}}
     <section class="w-full max-w-7xl mx-auto px-2 py-10 text-[#401457] overflow-hidden">
         <h1 class="text-[25px] xl:text-[30px] font-[700]" data-aos="fade-right">FAQs</h1>
-        <div class="w-full max-w-5xl py-2" data-aos="fade-right">
-            @foreach ($faqs as $faq)
+        <div class="w-full max-w-5xl py-2" data-aos="fade-right" x-data="{ open: null }">
+            {{-- @foreach ($faqs as $faq)
                 <div class="collapse collapse-arrow text-[13px] lg:text-[16px] xl:text-[18px]">
                     <input type="radio" name="my-accordion-2" {{ $faq->id==1 ? 'checked' : '' }} />
                     <div class="collapse-title font-semibold">Q: {{ $faq->question[app()->getLocale()] }}</div>
                     <div class="collapse-content flex items-start gap-2"><span class="font-semibold">A:</span> {!! $faq->answer[app()->getLocale()] !!}</div>
                 </div>
+            @endforeach --}}
+            @foreach ($faqs as $faq)
+                <div class="mb-2 border rounded shadow-sm text-[13px] lg:text-[16px] xl:text-[18px]">
+                    <button @click="open === {{ $faq->id }} ? open = null : open = {{ $faq->id }}"
+                        class="w-full flex justify-between text-start items-start md:items-center p-4 font-medium">
+                        <span>Q: {{ $faq->question[app()->getLocale()] }}</span>
+                        <div>
+                            <svg x-show="open === {{ $faq->id }}" class="w-5 h-5 transform rotate-180"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M5 15l7-7 7 7" />
+                            </svg>
+                            <svg x-show="open !== {{ $faq->id }}" class="w-5 h-5" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </div>
+                    </button>
+                    <div x-show="open === {{ $faq->id }}" x-collapse class="flex items-start gap-2 p-4 text-[13px] lg:text-[16px] xl:text-[18px]">
+                        <span class="font-semibold ">A:</span> {!! $faq->answer[app()->getLocale()] !!}
+                    </div>
+                </div>
             @endforeach
+
         </div>
         <h1 class="text-[25px] xl:text-[30px] font-[700]" data-aos="fade-right">Get in Touch!</h1>
         <ul class="ml-4 list-disc py-2 text-[13px] xl:text-[15px]" data-aos="fade-right">
-            <li>Email Address: <a href="mailto:{{ $contacts->email }}" class="">{{ $contacts->email }}</a></li>
-            <li>Phone Number: <a href="tel:{{ $contacts->phone_number }}" class="">{{ $contacts->phone_number }}</a>
+            <li>Email Address: <a href="https://mail.google.com/mail/?view=cm&fs=1&to={{ $contacts->email }}"
+                    class="">{{ $contacts->email }}</a></li>
+            <li>Phone Number: <a href="tel:{{ $contacts->phone_number }}"
+                    class="">{{ $contacts->phone_number }}</a>
             </li>
             <li>Hours of Operation: {{ $contacts->hours_of_operation[app()->getLocale()] }}</li>
             <li>Address: {{ $contacts->address[app()->getLocale()] }}</li>
