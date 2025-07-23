@@ -15,7 +15,8 @@
 </style>
 
 <div id="loading-overlay" class="fixed inset-0 bg-[#f8efff] z-[999] hidden transition-opacity duration-[2000ms] opacity-0">
-    <div class="flex flex-col items-center justify-center min-h-screen bg-[#f8efff]">
+    <div class="flex flex-col items-center gap-4 justify-center min-h-screen bg-[#f8efff]">
+        <img src="{{ asset('assets/images/logo.png') }}" alt="" class="w-20 h-auto animate-bounce">
         <div class="w-1/2 sm:w-[10%] bg-gray-200 h-1 overflow-hidden">
             <div class="bg-[#401457] h-full animate-loading-bar" style="width: 100%"></div>
         </div>
