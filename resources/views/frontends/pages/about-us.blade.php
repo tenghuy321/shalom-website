@@ -26,13 +26,13 @@
 
     {{-- mission & vision --}}
     <section class="w-full max-w-7xl mx-auto">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 py-4 md:py-10 px-4 lg:px-10 overflow-hidden">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 py-4 md:py-10 px-4 lg:px-10 overflow-hidden">
             <div class="flex flex-col items-start gap-4 text-[13px] xl:text-[15px] text-[#401457]" data-aos="fade-right" data-aos-duration="1000">
                 <h1 class="text-[22px] xl:text-[30px] uppercase leading-[30px]">{{ $mission->title[app()->getLocale()] }}
                 </h1>
 
                 <div class="pt-4 flex items-center gap-4 text-justify">
-                    <img src="{{ asset($mission->icon) }}" alt="" class="w-20 lg:w-full h-auto" loading="lazy">
+                    <img src="{{ asset($mission->icon) }}" alt="" class="w-20 h-auto" loading="lazy">
                     <div class="prose">
                         {!! $mission->content[app()->getLocale()] !!}
                     </div>
@@ -43,7 +43,7 @@
                 </h1>
 
                 <div class="pt-4 flex items-center gap-4 text-justify">
-                    <img src="{{ asset($vision->icon) }}" alt="" class="w-20 lg:w-full h-auto" loading="lazy">
+                    <img src="{{ asset($vision->icon) }}" alt="" class="w-20 h-auto" loading="lazy">
                     <div class="prose">
                         {!! $vision->content[app()->getLocale()] !!}
                     </div>
@@ -62,7 +62,7 @@
                     {!! $core->content[app()->getLocale()] !!}
                 </div>
 
-                <img src="{{ asset($core->icon) }}" alt="" class="w-20 md:w-40 h-auto order-1 md:order-none" loading="lazy">
+                <img src="{{ asset($core->icon) }}" alt="" class="w-40 h-auto order-1 md:order-none" loading="lazy">
             </div>
         </div>
 

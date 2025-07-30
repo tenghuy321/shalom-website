@@ -8,7 +8,7 @@
     <section class="w-full bg-[#f8efff] relative">
         <div class="w-full max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center py-10 lg:px-10 overflow-hidden">
             <div class="flex items-end justify-center order-2 md:order-none pt-6 md:mt-0" data-aos="fade-up" data-aos-duration="1000">
-                <img src="{{ asset($hero->icon) }}" alt="" class="w-[70%] lg:w-[80%]" loading="lazy">
+                <img src="{{ asset($hero->icon) }}" alt="" class="w-[50%]" loading="lazy">
             </div>
 
             <div class="px-4 text-[#401457] order-1 md:order-none" data-aos="fade-left" data-aos-duration="1000">

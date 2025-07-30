@@ -165,9 +165,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.15.0/Sortable.min.js"></script>
     <!-- CKEditor 4 CDN -->
     <script src="https://cdn.ckeditor.com/4.22.1/standard/ckeditor.js"></script>
-    <script src="{{ asset('assets/js/script.js') }}"></script>
     <script src="https://cdn.ckeditor.com/ckeditor5/45.1.0/ckeditor5.umd.js"></script>
-
+    <script src="{{ asset('assets/js/script.js') }}"></script>
     <script>
         // delete message
         function deleteRecord(url) {

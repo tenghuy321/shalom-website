@@ -177,7 +177,7 @@
             </div>
 
 
-            <img src="{{ asset('assets/images/contact-2.png') }}" alt="" class="w-32 h-auto"
+            <img src="{{ asset($contacts->icon) }}" alt="" class="w-32 md:w-40 h-auto"
                 data-aos="fade-left" data-aos-duration="1000">
         </div>
 
