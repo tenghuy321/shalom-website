@@ -25,7 +25,7 @@ return [
     'A' => 'ចម្លើយ',
 
     'what_we_do' => "អ្វីដែលយើងធ្វើ",
-    'more_details' => "More Detail",
+    'more_details' => "ព័ត៌មានលម្អិត",
     'email' => "អាសយដ្ឋានអ៊ីម៉ែល",
     'phone' => "លេខទូរស័ព្ទ",
     'hour' => "ម៉ោងធ្វើការ",
