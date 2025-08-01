@@ -206,7 +206,7 @@
             <li>{{ __('messages.phone') }}: <a href="tel:{{ $contacts->phone_number }}"
                     class="">{{ $contacts->phone_number }}</a>
             </li>
-            <li>{{ __('messages.hour') }}: {{ $contacts->hours_of_operation[app()->getLocale()] }}</li>
+            <li>{{ __('messages.hour') }}: {{ __('messages.hour_detail') }}</li>
             <li>{{ __('messages.address') }}: {{ $contacts->address[app()->getLocale()] }}</li>
         </ul>
 

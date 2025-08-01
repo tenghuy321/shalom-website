@@ -107,7 +107,7 @@
 
             <div class="flex flex-col items-center py-10 gap-10" data-aos="fade-up" data-aos-duration="1000">
                 <img src="{{ asset('assets/images/home/image-1.png') }}" alt="" class="w-full md:w-[50%] h-auto">
-                <p class="text-[22px] xl:text-[30px] uppercase text-center bg-[#f8efff] px-6 py-4 rounded-md">“WE SUPPORT PROFESSIONALLY”</p>
+                <p class="text-[22px] xl:text-[30px] uppercase text-center bg-[#f8efff] px-6 py-4 rounded-md">“{{ __('messages.WE SUPPORT PROFESSIONALLY') }}”</p>
             </div>
         </div>
     </section>
