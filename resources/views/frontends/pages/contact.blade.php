@@ -92,7 +92,7 @@
                         <div>
                             <label for="company"
                                 class="block text-[13px] xl:text-[15px] font-medium text-[#fff]">{{ __('messages.company') }}</label>
-                            <input type="text" name="company" id="company" placeholder="{{ __('messages.company_form') }}"
+                            <input type="text" name="company" id="company" placeholder="{{ __('messages.your_company') }}"
                                 class="mt-1 w-full border border-gray-300 rounded-md px-4 py-2 text-[13px] xl:text-[15px] text-[#401257] hover:border-[#000] focus:ring-[#000] focus:border-[#000]">
                         </div>
                         <div>
