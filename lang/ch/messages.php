@@ -1,6 +1,13 @@
 <?php
 return [
-    'home' => 'home ch',
+    'home' => '主页',
+    'about' => '关于我们',
+    'services' => '我们的服务',
+    'partners' => '我们的合作伙伴',
+    'clients' => '客户列表',
+    'industries' => '工业',
+    'event' => '我们的事件',
+    'contact' => '联系我们',
     'trusted_by_clients' => '深受客户信赖',
     'trusted_by_clients_details' => '我们以与客户建立持久的关系而自豪。我们致力于提供卓越的服务和结果，为我们赢得了社会上值得信赖的顾问的声誉。',
     'meet_our_team' => "认识我们的团队：",
@@ -11,5 +18,36 @@ return [
     'Book a free consultation today.' => '今天预订免费咨询。',
     'get_start_details' => '我们的团队将指导您完成实施过程，并提供持续的支持，以确保合规和成功。',
     'Q' => '问',
-    'A' => '答'
+    'A' => '答',
+
+
+    'what_we_do' => "我们所做的事情",
+    'more_details' => "更多细节",
+
+
+    'email' => "电子邮件地址",
+    'phone' => "电话号码",
+    'hour' => "营业时间",
+    'hour_detail' => "星期一至星期五，上午8时至下午5时（柬埔寨时间）",
+    'address' => "实际地址",
+    'all-services' => '全业务',
+    'form_title' => '我们是来帮忙的。无论您对我们的服务有任何疑问，还是需要税务方面的帮助，请随时与我们联系',
+
+    'first_name' => '名字',
+    'your_first_name' => '你的名字',
+    'second_name' => '第二个名字',
+    'your_second_name' => '你的第二个名字',
+    'email_form' => '电子邮件',
+    'your_email_form' => '你的电子邮件',
+    'phone_form' => '电话',
+    'your_phone_form' => '你的电话',
+    'company' => '公司',
+    'your_company' => '你的公司',
+    'job_title' => '职位',
+    'form_job_title' => '你的职位',
+    'seveice_form' => '您对哪种服务感兴趣？',
+    'your_seveice_form' => '请选择一个',
+    'message' => '信息',
+    'message_form' => '述一下我们可以如何帮助你……',
+    'submit' => '提交',
 ];

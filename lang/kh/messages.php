@@ -1,6 +1,13 @@
 <?php
 return [
-    'home' => 'home kh',
+    'home' => 'Home',
+    'about' => 'About Us',
+    'services' => 'Our Services',
+    'partners' => 'Partners',
+    'clients' => 'Clients',
+    'industries' => 'Industries',
+    'event' => 'Events',
+    'contact' => 'Contact us',
     'trusted_by_clients' => 'Trusted by our Clients',
     'trusted_by_clients_details' => 'We pride ourselves on building lasting relationships with our clients. Our commitment to delivering exceptional service and results has earned us a reputation as trusted advisors in the community.',
     'meet_our_team' => "Meet Our Team:",
@@ -12,5 +19,29 @@ return [
     'get_start_details' => 'Our team will guide you through the implementation process and provide ongoing support to ensure compliance and success.',
 
     'Q' => 'Q',
-    'A' => 'A'
+    'A' => 'A',
+
+    'what_we_do' => "What we do",
+    'more_details' => "More Detail",
+    'email' => "Email Address",
+    'phone' => "Phone Number",
+    'hour' => "Hours of Operation",
+    'hour_detail' => "Monday to Friday, 8 AM to 5 PM (Cambodia Time)",
+    'address' => "Physical Address",
+    'all-services' => 'All Services',
+
+    'form_title' => "We're here to help. Whether you have questions about our services or need a ssistance with a tax-related issue, feel free to reach out",
+    'first_name' => 'First Name',
+    'your_first_name' => 'Your First Name',
+    'second_name' => 'Second Name',
+    'your_second_name' => 'Your Second Name',
+    'email_form' => 'Email',
+    'your_email_form' => 'Your Email',
+    'phone_form' => 'Phone',
+    'your_phone_form' => 'Your Phone',
+    'seveice_form' => 'Which service are you interested in?',
+    'your_seveice_form' => 'Please Choose One',
+    'message' => 'Message',
+    'message_form' => 'To better assist your, please describe how we can help...',
+    'submit' => 'Submit',
 ];

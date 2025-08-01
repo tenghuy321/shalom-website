@@ -21,7 +21,7 @@
 
                         <a href="https://docs.google.com/forms/d/e/1FAIpQLScVamkswJpHoulIwjaWxB1_QL_RkVIg3Xd8gfrGkCyWESmzGQ/viewform?usp=header"
                             class="inline-flex items-center gap-4 px-4 py-2 mt-2 uppercase bg-[#401457] rounded-full">
-                            <span class="font-[600] text-[#fff]">Book Now</span>
+                            <span class="font-[600] text-[#fff]">{{ __('messages.book_now') }}</span>
                             <span class="bg-[#fff] w-8 h-8 rounded-full flex items-center justify-center">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none"
                                     stroke="#401457" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -61,9 +61,9 @@
 
     {{-- service --}}
     <section class="w-full max-w-7xl mx-auto px-4 sm:px-10 pt-4 text-[#401457]">
-        <h1 class="text-[16px] xl:text-[20px]" data-aos="fade-right" data-aos-duration="1000">what we do</h1>
+        <h1 class="text-[16px] xl:text-[20px]" data-aos="fade-right" data-aos-duration="1000">{{ __('messages.what_we_do') }}</h1>
         <hr class="my-2 border border-b-[#401457]" data-aos="fade-right" data-aos-duration="1000">
-        <h1 class="text-[22px] xl:text-[30px]" data-aos="fade-right" data-aos-duration="1000">OUR SERVICES</h1>
+        <h1 class="text-[22px] xl:text-[30px]" data-aos="fade-right" data-aos-duration="1000">{{ $heroes->title[app()->getLocale()] }}</h1>
 
         <div class="w-full flex flex-wrap items-stretch justify-center gap-4 py-10">
 
@@ -90,7 +90,7 @@
 
                             <a class="py-2 w-full block border-2 border-[#401457] rounded-md hover:bg-[#401457] hover:text-[#fff]"
                                 href="{{ route('service-details', ['slug' => $service->slug]) }}">
-                                More Detail
+                                {{ __('messages.more_details') }}
                             </a>
                         </div>
                     </div>
@@ -199,15 +199,15 @@
             @endforeach
 
         </div>
-        <h1 class="text-[25px] xl:text-[30px] font-[700]" data-aos="fade-right">Get in Touch!</h1>
+        <h1 class="text-[25px] xl:text-[30px] font-[700]" data-aos="fade-right">{{ $get->title[app()->getLocale()] }}</h1>
         <ul class="ml-4 list-disc py-2 text-[13px] xl:text-[15px]" data-aos="fade-right">
-            <li>Email Address: <a href="https://mail.google.com/mail/?view=cm&fs=1&to={{ $contacts->email }}"
+            <li>{{ __('messages.email') }}: <a href="https://mail.google.com/mail/?view=cm&fs=1&to={{ $contacts->email }}"
                     class="">{{ $contacts->email }}</a></li>
-            <li>Phone Number: <a href="tel:{{ $contacts->phone_number }}"
+            <li>{{ __('messages.phone') }}: <a href="tel:{{ $contacts->phone_number }}"
                     class="">{{ $contacts->phone_number }}</a>
             </li>
-            <li>Hours of Operation: {{ $contacts->hours_of_operation[app()->getLocale()] }}</li>
-            <li>Address: {{ $contacts->address[app()->getLocale()] }}</li>
+            <li>{{ __('messages.hour') }}: {{ $contacts->hours_of_operation[app()->getLocale()] }}</li>
+            <li>{{ __('messages.address') }}: {{ $contacts->address[app()->getLocale()] }}</li>
         </ul>
 
 

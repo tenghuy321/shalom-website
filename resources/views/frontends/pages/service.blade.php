@@ -8,13 +8,13 @@
     <section class="w-full bg-[#f8efff] relative">
         <div class="w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 items-center pt-10 lg:px-10">
             <div class="px-2 lg:px-10 text-[#401457]" data-aos="fade-right" data-aos-duration="1000">
-                <h2 class="text-[22px] xl:text-[30px]">what we do</h2>
+                <h2 class="text-[22px] xl:text-[30px]">{{ __('messages.what_we_do') }}</h2>
                 <hr class="bg-[#401457] border-[#401457] border-b-0 mb-10">
                 <h1 class="text-[30px] md:text-[50px] uppercase lg:leading-[55px]">{{ $hero->title[app()->getLocale()] }}</h1>
 
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLScVamkswJpHoulIwjaWxB1_QL_RkVIg3Xd8gfrGkCyWESmzGQ/viewform?usp=header"
                     class="inline-flex items-center gap-4 px-4 py-2 mt-2 uppercase bg-[#401457] rounded-full">
-                    <span class="font-[600] text-[#fff]">Book Now</span>
+                    <span class="font-[600] text-[#fff]">{{ __('messages.book_now') }}</span>
                     <span class="bg-[#fff] w-8 h-8 rounded-full flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none"
                             stroke="#401457" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -56,7 +56,7 @@
 
                             <a class="py-2 w-full block border-2 border-[#401457] rounded-md hover:bg-[#401457] hover:text-[#fff]"
                                 href="{{ route('service-details', ['slug' => $service->slug]) }}">
-                                More Detail
+                                {{ __('messages.more_details') }}
                             </a>
                         </div>
                     </div>

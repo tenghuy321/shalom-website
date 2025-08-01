@@ -20,7 +20,7 @@
 
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLScVamkswJpHoulIwjaWxB1_QL_RkVIg3Xd8gfrGkCyWESmzGQ/viewform?usp=header"
                     class="inline-flex items-center gap-4 px-4 py-2 mt-2 uppercase bg-[#401457] rounded-full">
-                    <span class="font-[600] text-[#fff]">Book Now</span>
+                    <span class="font-[600] text-[#fff]">{{ __('messages.book_now') }}</span>
                     <span class="bg-[#fff] w-8 h-8 rounded-full flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none"
                             stroke="#401457" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">

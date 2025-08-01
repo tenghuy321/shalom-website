@@ -16,6 +16,8 @@ class HomeController extends Controller
         $data['services'] = Services::orderBy('order')->get();
         $data['faqs'] = Faq::orderBy('order')->get();
         $data['hero'] = Hero::find(1);
+        $data['heroes'] = Hero::find(3);
+        $data['get'] = Hero::find(8);
         $data['contacts'] = Contact::first();
 
         return view('frontends.pages.home', $data);

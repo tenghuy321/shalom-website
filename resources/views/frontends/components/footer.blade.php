@@ -5,35 +5,35 @@
                 <ul class="space-y-2 py-5">
                     <li
                         class="text-[14px] xl:text-[16px] text-[#fff] {{ Route::is('home') ? 'font-[700] underline' : 'font-[400] hover:underline' }}">
-                        <a href="{{ route('home') }}">Home</a>
+                        <a href="{{ route('home') }}">{{ __('messages.home') }}</a>
                     </li>
                     <li
                         class="text-[14px] xl:text-[16px] text-[#fff] {{ Route::is('about-us') ? 'font-[700] underline' : 'font-[400] hover:underline' }}">
-                        <a href="{{ route('about-us') }}">About Us</a>
+                        <a href="{{ route('about-us') }}">{{ __('messages.about') }}</a>
                     </li>
                     <li
                         class="text-[14px] xl:text-[16px] text-[#fff] {{ Route::is('service') ? 'font-[700] underline' : 'font-[400] hover:underline' }}">
-                        <a href="{{ route('service') }}">Our Services</a>
+                        <a href="{{ route('service') }}">{{ __('messages.services') }}</a>
                     </li>
                     <li
                         class="text-[14px] xl:text-[16px] text-[#fff] {{ Route::is('our-partners') ? 'font-[700] underline' : 'font-[400] hover:underline' }}">
-                        <a href="{{ route('our-partners') }}">Partners</a>
+                        <a href="{{ route('our-partners') }}">{{ __('messages.partners') }}</a>
                     </li>
                     <li
                         class="text-[14px] xl:text-[16px] text-[#fff] {{ Route::is('client') ? 'font-[700] underline' : 'font-[400] hover:underline' }}">
-                        <a href="{{ route('client') }}">Clients</a>
+                        <a href="{{ route('client') }}">{{ __('messages.clients') }}</a>
                     </li>
                     <li
                         class="text-[14px] xl:text-[16px] text-[#fff] {{ Route::is('industry') ? 'font-[700] underline' : 'font-[400] hover:underline' }}">
-                        <a href="{{ route('industry') }}">Industries</a>
+                        <a href="{{ route('industry') }}">{{ __('messages.industries') }}</a>
                     </li>
                     <li
                         class="text-[14px] xl:text-[16px] text-[#fff] {{ Route::is('event') ? 'font-[700] underline' : 'font-[400] hover:underline' }}">
-                        <a href="{{ route('event') }}">Events</a>
+                        <a href="{{ route('event') }}">{{ __('messages.event') }}</a>
                     </li>
                     <li
                         class="text-[14px] xl:text-[16px] text-[#fff] {{ Route::is('contact') ? 'font-[700] underline' : 'font-[400] hover:underline' }}">
-                        <a href="{{ route('contact') }}">Contact Us</a>
+                        <a href="{{ route('contact') }}">{{ __('messages.contact') }}</a>
                     </li>
                 </ul>
             </div>
@@ -123,7 +123,7 @@
 
                     <a href="#"
                         class="inline-flex items-center gap-4 bg-white text-[#401457] font-bold px-4 py-2 rounded-full mt-4 hover:bg-gray-100 transition">
-                        BOOK NOW
+                        {{ __('messages.book_now') }}
                         <span class="bg-[#401457] w-8 h-8 rounded-full flex items-center justify-center">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24"
                                 fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"
@@ -139,14 +139,14 @@
             <div>
                 <h2 class="text-[#fff] text-[22px] xl:text-[30px] font-semibold">Contact</h2>
                 <ul class="ml-2 py-5 text-[14px] xl:text-[16px] text-[#fff] space-y-2 font-[300]">
-                    <li><span class="font-[700]">Email Address:</span> <a href="mailto:{{ $contacts->email }}"
+                    <li><span class="font-[700]">{{ __('messages.email') }}:</span> <a href="mailto:{{ $contacts->email }}"
                             class="">{{ $contacts->email }}</a></li>
-                    <li><span class="font-[700]">Phone Number:</span> <a href="tel:{{ $contacts->phone_number }}"
+                    <li><span class="font-[700]">{{ __('messages.phone') }}:</span> <a href="tel:{{ $contacts->phone_number }}"
                             class="">{{ $contacts->phone_number }}</a>
                     </li>
-                    <li><span class="font-[700]">Hours of Operation:</span>
-                        {{ $contacts->hours_of_operation[app()->getLocale()] }}</li>
-                    <li><span class="font-[700]">Address:</span> {{ $contacts->address[app()->getLocale()] }}</li>
+                    <li><span class="font-[700]">{{ __('messages.hour') }}:</span>
+                        {{ __('messages.hour_detail') }}</li>
+                    <li><span class="font-[700]">{{ __('messages.address') }}:</span> {{ $contacts->address[app()->getLocale()] }}</li>
                 </ul>
             </div>
         </div>

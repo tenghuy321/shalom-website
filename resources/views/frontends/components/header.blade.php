@@ -6,7 +6,7 @@
 <header class="">
     <div
         class="w-full h-[3rem] sm:h-[4rem] xl:h-[5rem] px-4 sm:px-6 xl:px-12 flex items-center justify-between bg-[#401457] text-[#fff] font-[400] text-[12px] xl:text-[14px] z-[100]">
-        <h1 class="hidden lg:flex">contact :</h1>
+        <h1 class="hidden lg:flex">{{ __('messages.contact') }} :</h1>
 
         <div class="hidden lg:flex items-center gap-10">
             <div class="flex items-center gap-10">
@@ -106,7 +106,7 @@
                         <button @click="navigateAfterClose('{{ route('home') }}')"
                             class="block w-full text-left px-2 py-2 text-[12px] uppercase rounded
                             {{ Route::is('home') ? 'text-[#401457] font-[700] bg-[#fff]' : 'text-[#fff] font-[400]' }}">
-                            Home
+                            {{ __('messages.home') }}
                         </button>
                     </li>
                     <hr>
@@ -114,7 +114,7 @@
                         <button @click="navigateAfterClose('{{ route('about-us') }}')"
                             class="block w-full text-left px-2 py-2 text-[12px] uppercase rounded
                             {{ Route::is('about-us') ? 'text-[#401457] font-[700] bg-[#fff]' : 'text-[#fff] font-[400]' }}">
-                            About Us
+                            {{ __('messages.about') }}
                         </button>
                     </li>
                     <hr>
@@ -122,7 +122,7 @@
                         <button @click="navigateAfterClose('{{ route('service') }}')"
                             class="block w-full text-left px-2 py-2 text-[12px] uppercase rounded
                             {{ Route::is('service') ? 'text-[#401457] font-[700] bg-[#fff]' : 'text-[#fff] font-[400]' }}">
-                            Service
+                            {{ __('messages.services') }}
                         </button>
                     </li>
                     <hr>
@@ -130,7 +130,7 @@
                         <button @click="navigateAfterClose('{{ route('our-partners') }}')"
                             class="block w-full text-left px-2 py-2 text-[12px] uppercase rounded
                             {{ Route::is('our-partners') ? 'text-[#401457] font-[700] bg-[#fff]' : 'text-[#fff] font-[400]' }}">
-                            Partner
+                            {{ __('messages.partners') }}
                         </button>
                     </li>
                     <hr>
@@ -138,7 +138,7 @@
                         <button @click="navigateAfterClose('{{ route('client') }}')"
                             class="block w-full text-left px-2 py-2 text-[12px] uppercase rounded
                             {{ Route::is('client') ? 'text-[#401457] font-[700] bg-[#fff]' : 'text-[#fff] font-[400]' }}">
-                            Client
+                            {{ __('messages.clients') }}
                         </button>
                     </li>
                     <hr>
@@ -146,7 +146,7 @@
                         <button @click="navigateAfterClose('{{ route('industry') }}')"
                             class="block w-full text-left px-2 py-2 text-[12px] uppercase rounded
                             {{ Route::is('industry') ? 'text-[#401457] font-[700] bg-[#fff]' : 'text-[#fff] font-[400]' }}">
-                            Industry
+                            {{ __('messages.industries') }}
                         </button>
                     </li>
                     <hr>
@@ -154,7 +154,7 @@
                         <button @click="navigateAfterClose('{{ route('event') }}')"
                             class="block w-full text-left px-2 py-2 text-[12px] uppercase rounded
                             {{ Route::is('event') ? 'text-[#401457] font-[700] bg-[#fff]' : 'text-[#fff] font-[400]' }}">
-                            Event
+                            {{ __('messages.event') }}
                         </button>
                     </li>
                     <hr>
@@ -162,7 +162,7 @@
                         <button @click="navigateAfterClose('{{ route('contact') }}')"
                             class="block w-full text-left px-2 py-2 text-[12px] uppercase rounded
                             {{ Route::is('contact') ? 'text-[#401457] font-[700] bg-[#fff]' : 'text-[#fff] font-[400]' }}">
-                            Contact
+                            {{ __('messages.contact') }}
                         </button>
                     </li>
                 </ul>
