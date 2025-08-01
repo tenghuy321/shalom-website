@@ -178,7 +178,7 @@
                 <div class="mb-2 border rounded shadow-sm text-[13px] lg:text-[16px] xl:text-[18px]">
                     <button @click="open === {{ $faq->id }} ? open = null : open = {{ $faq->id }}"
                         class="w-full flex justify-between text-start items-start md:items-center p-4 font-medium">
-                        <span>Q: {{ $faq->question[app()->getLocale()] }}</span>
+                        <span>{{ __('messages.Q') }}: {{ $faq->question[app()->getLocale()] }}</span>
                         <div>
                             <svg x-show="open === {{ $faq->id }}" class="w-5 h-5 transform rotate-180"
                                 fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -193,7 +193,7 @@
                         </div>
                     </button>
                     <div x-show="open === {{ $faq->id }}" x-collapse class="flex items-start gap-2 p-4 text-[13px] lg:text-[16px] xl:text-[18px]">
-                        <span class="font-semibold ">A:</span> {!! $faq->answer[app()->getLocale()] !!}
+                        <span class="font-semibold ">{{ __('messages.A') }}:</span> {!! $faq->answer[app()->getLocale()] !!}
                     </div>
                 </div>
             @endforeach

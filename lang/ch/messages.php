@@ -9,5 +9,7 @@ return [
     'Don’t know where to start?' => '不知道从哪里开始？',
     'Getting Started is Easy.' => '入门很容易',
     'Book a free consultation today.' => '今天预订免费咨询。',
-    'get_start_details' => '我们的团队将指导您完成实施过程，并提供持续的支持，以确保合规和成功。'
+    'get_start_details' => '我们的团队将指导您完成实施过程，并提供持续的支持，以确保合规和成功。',
+    'Q' => '问',
+    'A' => '答'
 ];

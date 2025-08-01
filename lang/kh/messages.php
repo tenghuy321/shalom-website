@@ -9,5 +9,8 @@ return [
     'Don’t know where to start?' => 'Don’t know where to start?',
     'Getting Started is Easy.' => 'Getting Started is Easy.',
     'Book a free consultation today.' => 'Book a free consultation today.',
-    'get_start_details' => 'Our team will guide you through the implementation process and provide ongoing support to ensure compliance and success.'
+    'get_start_details' => 'Our team will guide you through the implementation process and provide ongoing support to ensure compliance and success.',
+
+    'Q' => 'Q',
+    'A' => 'A'
 ];
