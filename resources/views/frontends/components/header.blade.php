@@ -6,12 +6,12 @@
 <header class="">
     <div
         class="w-full h-[3rem] sm:h-[4rem] xl:h-[5rem] px-4 sm:px-6 xl:px-12 flex items-center justify-between bg-[#401457] text-[#fff] font-[400] text-[12px] xl:text-[14px] z-[100]">
-        <h1 class="hidden lg:flex">{{ __('messages.contact') }} :</h1>
+        <h1 class="hidden lg:flex">{{ __('messages.contact_header') }} :</h1>
 
         <div class="hidden lg:flex items-center gap-10">
             <div class="flex items-center gap-10">
-                <a href="{{ $contacts->phone_number }}">Tel: {{ $contacts->phone_number }}</a>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to={{ $contacts->email }}">Email: {{ $contacts->email }}</a>
+                <a href="{{ $contacts->phone_number }}">{{ __('messages.tel_header') }} {{ $contacts->phone_number }}</a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to={{ $contacts->email }}">{{ __('messages.email_header') }} {{ $contacts->email }}</a>
             </div>
 
             <div class="relative" x-data="{ open: false }">

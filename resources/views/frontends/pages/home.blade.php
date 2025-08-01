@@ -165,7 +165,7 @@
 
     {{-- faqs and Get in Touch! --}}
     <section class="w-full max-w-7xl mx-auto px-2 py-10 text-[#401457] overflow-hidden">
-        <h1 class="text-[25px] xl:text-[30px] font-[700]" data-aos="fade-right">FAQs</h1>
+        <h1 class="text-[25px] xl:text-[30px] font-[700]" data-aos="fade-right">{{ $faq->title[app()->getLocale()] }}</h1>
         <div class="w-full max-w-5xl py-2" data-aos="fade-right" x-data="{ open: null }">
             {{-- @foreach ($faqs as $faq)
                 <div class="collapse collapse-arrow text-[13px] lg:text-[16px] xl:text-[18px]">

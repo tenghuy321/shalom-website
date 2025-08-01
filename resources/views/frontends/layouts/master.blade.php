@@ -27,6 +27,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- In <head> -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -107,8 +108,10 @@
     </style>
     @yield('css')
 </head>
-
-<body class="min-h-screen" style='font-family: "Fraunces", serif;'>
+@php
+    $lang = app()->getLocale(); // or however you set the language
+@endphp
+<body class="min-h-screen" style='font-family: {{ $lang === "kh" ? '"Kantumruy Pro", sans-serif' : '"Fraunces", serif' }};'>
     @include('frontends.components.header', ['contacts' => $contacts])
     @include('frontends.components.navbar')
     @yield('content')
