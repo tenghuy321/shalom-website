@@ -102,12 +102,12 @@
     {{-- trust --}}
     <section class="w-full bg-[#401457] py-10">
         <div class="w-full max-w-7xl mx-auto px-2 text-[#fff] font-[600]" data-aos="fade-right" data-aos-duration="1000">
-            <h1 class="text-[16px] xl:text-[20px]">Trusted by our Clients</h1>
+            <h1 class="text-[16px] xl:text-[20px]">{{ __('messages.trusted_by_clients') }}</h1>
+
             <div
                 class="flex flex-col sm:flex-row items-start sm:items-center pt-6 gap-6 md:gap-10 text-[13px] xl:text-[15px]">
                 <img src="{{ asset('assets/images/home/icon-3.png') }}" alt="" class="w-20 h-auto" loading="lazy">
-                <p>We pride ourselves on building lasting relationships with our clients. Our commitment to delivering
-                    exceptional service and results has earned us a reputation as trusted advisors in the community.</p>
+                <p>{{ __('messages.trusted_by_clients_details') }}</p>
             </div>
         </div>
     </section>
@@ -115,12 +115,11 @@
     {{-- team --}}
     <section class="w-full py-10">
         <div class="w-full max-w-7xl mx-auto px-2 text-[#401457]">
-            <h1 class="text-[16px] xl:text-[20px]" data-aos="fade-right" data-aos-duration="1000">Meet Our Team:</h1>
+            <h1 class="text-[16px] xl:text-[20px]" data-aos="fade-right" data-aos-duration="1000">{{ __('messages.meet_our_team') }}</h1>
             <div class="flex flex-col items-center pt-6 gap-10" data-aos="fade-up" data-aos-duration="1000">
                 <img src="{{ asset('assets/images/home/image-1.png') }}" alt="" class="w-full md:w-[50%] h-auto"
                     loading="lazy">
-                <p class="text-[22px] xl:text-[30px] uppercase text-center bg-[#f8efff] px-6 py-4 rounded-md">“WE SUPPORT
-                    PROFESSIONALLY”</p>
+                <p class="text-[22px] xl:text-[30px] uppercase text-center bg-[#f8efff] px-6 py-4 rounded-md">“{{ __('messages.WE SUPPORT PROFESSIONALLY') }}”</p>
             </div>
         </div>
     </section>
@@ -129,10 +128,10 @@
     <section class="bg-[#401457] py-10 px-4 relative overflow-visible">
         <div class="max-w-4xl mx-auto relative">
             <div class="text-center text-white mb-4" data-aos="fade-up">
-                <h2 class="text-[22px] xl:text-[30px] font-semibold">Getting Started is Easy</h2>
+                <h2 class="text-[22px] xl:text-[30px] font-semibold">{{ __('messages.Getting Started is Easy.') }}</h2>
                 <a href="https://docs.google.com/forms/d/e/1FAIpQLScVamkswJpHoulIwjaWxB1_QL_RkVIg3Xd8gfrGkCyWESmzGQ/viewform?usp=header"
                     class="inline-flex items-center gap-4 px-4 py-2 mt-2 uppercase bg-[#fff] rounded-full">
-                    <span class="font-[600] text-[#401457]">Book Now</span>
+                    <span class="font-[600] text-[#401457]">{{ __('messages.book_now') }}</span>
                     <span class="bg-[#401457] w-8 h-8 rounded-full flex items-center justify-center">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none"
                             stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -148,11 +147,10 @@
                 <!-- Text Section -->
                 <div class="text-[#401457] text-center w-full h-full flex flex-col items-center justify-center"
                     data-aos="fade-right">
-                    <p class="text-[16px] xl:text-[20px] font-medium">Don’t know where to start?</p>
-                    <h1 class="text-[22px] xl:text-[30px] font-bold mb-2">Book a free of charge consulting today</h1>
+                    <p class="text-[16px] xl:text-[20px] font-medium">{{ __('messages.Don’t know where to start?') }}</p>
+                    <h1 class="text-[22px] xl:text-[30px] font-bold mb-2">{{ __('messages.Book a free consultation today.') }}</h1>
                     <p class="text-[13px] xl:text-[15px] max-w-sm mx-auto">
-                        Our team will guide you through the implementation process and provide ongoing support to ensure
-                        compliance and success.
+                        {{ __('messages.get_start_details') }}
                     </p>
                 </div>
 

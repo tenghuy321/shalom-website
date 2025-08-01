@@ -1,26 +1,26 @@
 <?php
 
-use App\Http\Controllers\Admin\AboutListController;
-use App\Http\Controllers\Admin\CertificateController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\LanguageController;
+use App\Http\Controllers\Admin\FaqController;
+use App\Http\Controllers\Admin\HeroController;
 use App\Http\Controllers\Admin\TeamController;
 use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\EventController;
+use App\Http\Controllers\Admin\AboutListController;
+use App\Http\Controllers\Admin\ContactUsController;
 use App\Http\Controllers\Frontend\ClientController;
 use App\Http\Controllers\Frontend\AboutUsController;
 use App\Http\Controllers\Frontend\BookingController;
 use App\Http\Controllers\Frontend\ContactController;
 use App\Http\Controllers\Frontend\PartnerController;
 use App\Http\Controllers\Frontend\ServiceController;
+use App\Http\Controllers\Admin\CertificateController;
 use App\Http\Controllers\Admin\ServiceListController;
 use App\Http\Controllers\Frontend\IndustryController;
-use App\Http\Controllers\Admin\ClientBackendController;
-use App\Http\Controllers\Admin\ContactUsController;
 use App\Http\Controllers\Admin\EventBackendController;
-use App\Http\Controllers\Admin\FaqController;
-use App\Http\Controllers\Admin\HeroController;
+use App\Http\Controllers\Admin\ClientBackendController;
 use App\Http\Controllers\Admin\PartnerBackendController;
 use App\Http\Controllers\Admin\IndustryBackendController;
 
